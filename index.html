@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  </head>
+  <style type="text/css">
+
+body {
+  margin: 0;
+}
+
+/*sezione contenitore*/
+ .web-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 100%;
+  }
+/*sezione della home con le cards*/
+  .sezione-home {
+  align-self: center;
+  justify: center;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 608px;
+  padding: 0;
+  margin: 0;
+  justify-content:flex-start;
+  align-items: center;
+  }
+
+@media screen and (min-width: 928px) {
+  .sezione-home {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 912px;
+  padding: 0;
+  margin: 0;
+  justify-content:flex-start;
+  align-items: center;
+    }
+  }
+
+@media screen and (max-width: 664px) {
+  .sezione-home {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 304px;
+  padding: 0;
+  margin: 0;
+  justify-content:flex-start;
+  align-items: center;
+  }
+}
+/*fine sezione della home con le cards*/
+
+/*cards specifiche*/
+.card-home {
+  background-color: black;
+  align-self: center;
+  width: 296px;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.card-home-2 {
+  background-color: black;
+  flex-basis: 600px;
+}
+
+@media screen and (max-width: 928px) {
+  .card-home-2 {
+    background-color: black;
+    flex-basis: 296px;
+  }
+}
+
+.card-home-3 {
+  background-color: black;
+  flex-basis: 976px;
+}
+/*fine cards specifiche*/
+
+/*cards generali*/
+.card-home, .card-home-2, .card-home-3 {
+  height: 296px;
+  margin: 4px;
+  border-radius: 15px;
+  background-color: grey;
+  box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.2)
+}
+
+.card-home:hover, .card-home-2:hover, .card-home-3:hover {
+  transition: all .5s ease-in-out;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+  transform: perspective(100px) translateZ(8px);
+}
+
+/*fine cards generali*/
+
+.spazio-vuoto {
+  display: block;
+  height: 150px;
+}
+  </style>
+
+
+  <body>
+    <div class="web-content">
+      <div class="spazio-vuoto">
+      </div>
+      <section class="sezione-home">
+        <div class="card-home-3">
+
+
+
+        </div>
+        <div class="card-home">
+          contenuto
+        </div>
+        <div class="card-home-2">
+          contenuto
+        </div>
+        <div class="card-home">
+          contenuto
+        </div>
+        <div class="card-home">
+          contenuto
+        </div>
+        <div class="card-home">
+          contenuto
+        </div>
+      </section>
+  </body>
+</html>
